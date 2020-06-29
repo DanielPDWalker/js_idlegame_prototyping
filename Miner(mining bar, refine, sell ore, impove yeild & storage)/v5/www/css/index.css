@@ -1,0 +1,22 @@
+div#mining_block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+div#refinery_block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+div#market_block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+th {
+    padding-right: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.2rem;
+}
