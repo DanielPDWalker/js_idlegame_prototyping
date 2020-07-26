@@ -59,11 +59,11 @@ setInterval(() => {
     OC.checkStorage();  
 }, 500);
 
-document.getElementById("refine_button").addEventListener("click", function() {
+document.getElementById("refine_button").addEventListener("click", () => {
     refine();
 });
 
-document.getElementById("upgrade_storage_button").addEventListener("click", function() {
+document.getElementById("upgrade_storage_button").addEventListener("click", () => {
     if (RC.material_count["Iron"] >= OC.upgrade_cost_storage){
         RC.material_count["Iron"] = RC.material_count["Iron"] - OC.upgrade_cost_storage;
         OC.upgradeStorage();
@@ -71,17 +71,17 @@ document.getElementById("upgrade_storage_button").addEventListener("click", func
     };
 });
 
-document.getElementById("upgrade_mining_yeild_button").addEventListener("click", function() {
+document.getElementById("upgrade_mining_yeild_button").addEventListener("click", () => {
     OC.upgradeMining(RC);
 });
 
-document.getElementById("sell_100_button").addEventListener("click", function() {
+document.getElementById("sell_100_button").addEventListener("click", () => {
     if (OC.total_ore >= 100){
         MC.sellOre(CC, OC);
         MC.updateOreCost();
     };
 });
 
-document.getElementById("mining_drone_blueprint_buy_button").addEventListener("click", function() {
+document.getElementById("mining_drone_blueprint_buy_button").addEventListener("click", () => {
     MC.buyBlueprint(CC, BP, "mining_drone")
 });
