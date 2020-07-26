@@ -12,13 +12,14 @@ export class Market_Controller {
         OC.updateOreAmounts(100);
     };
 
-    buyBlueprint(CC, BP, selected_blueprint){
+    buyBlueprint(CC, BP, IC, selected_blueprint){
       if (CC.total_credits >= BP.blueprint_for_sale[selected_blueprint]){
         CC.total_credits -= BP.blueprint_for_sale[selected_blueprint];
         BP.addBlueprintToPlayer(selected_blueprint);
         CC.refreshCreditAmount()
         let button = document.getElementById(selected_blueprint+"_blueprint_buy_button");
         button.disabled = true;
+        IC.updateIndustryCosts()
       }
     };
 

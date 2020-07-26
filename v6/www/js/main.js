@@ -21,12 +21,14 @@ import { Refinery_Controller } from './refinery.js';
 import { Credit_Controller } from './credit.js';
 import { Market_Controller } from './market.js';
 import { Blueprint_Controller } from './blueprint.js';
+import { Industry_Controller } from './industry.js';
 
 var OC = new Ore_Controller();
 var RC = new Refinery_Controller();
 var CC = new Credit_Controller();
 var MC = new Market_Controller();
 var BP = new Blueprint_Controller();
+var IC = new Industry_Controller(BP);
 
 
 OC.updateMiningYieldUpgradeCost()
@@ -83,5 +85,5 @@ document.getElementById("sell_100_button").addEventListener("click", () => {
 });
 
 document.getElementById("mining_drone_blueprint_buy_button").addEventListener("click", () => {
-    MC.buyBlueprint(CC, BP, "mining_drone")
+    MC.buyBlueprint(CC, BP, IC, "mining_drone")
 });
