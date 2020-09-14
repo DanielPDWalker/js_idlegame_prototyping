@@ -1,0 +1,23 @@
+{
+  "name": "1-JS_Games",
+  "version": "1.0.0",
+  "description": "Many versions of an web based idle game I'm prototyping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielPDWalker/Moon_Miner-JS-ES6-Idlegame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielPDWalker/Moon_Miner-JS-ES6-Idlegame/issues"
+  },
+  "homepage": "https://github.com/DanielPDWalker/Moon_Miner-JS-ES6-Idlegame#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
