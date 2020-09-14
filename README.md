@@ -5,5 +5,5 @@ To run any of them after downloading you will need node. Open a terminal session
   
   The server will then be hosting the game at ```localhost:3000```.
   
-  Example running:
+  Example running:  
   ![Game Image](vanilla_js_gameV5.JPG)
